@@ -14,12 +14,12 @@ export const globalStyles = StyleSheet.create({
     fontWeight: 'bold',
     color: COLORS.primary,
     textAlign: 'center',
-    marginBottom: 20,
+    marginBottom: 10,
   },
   userCard: {
     backgroundColor: COLORS.white,
     marginHorizontal: 16,
-    marginVertical: 16,
+    marginVertical: 8,
     padding: 16,
     borderRadius: 10,
     shadowColor: COLORS.primary,
@@ -53,11 +53,24 @@ export const globalStyles = StyleSheet.create({
     fontSize: 14,
     color: COLORS.textLight,
     fontStyle: 'italic',
+    marginBottom: 4,
+  },
+  userCompany: {
+    fontSize: 14,
+    color: COLORS.text,
+    fontWeight: '600',
+    marginTop: 4,
+  },
+  userAddress: {
+    fontSize: 12,
+    color: COLORS.textLight,
+    marginTop: 4,
   },
   loadingContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: COLORS.background,
   },
   loadingText: {
     marginTop: 10,
@@ -77,7 +90,7 @@ export const globalStyles = StyleSheet.create({
     marginBottom: 20,
   },
   retryButton: {
-    backgroundColor: '#3498db', // Replaced COLORS.secondary with the color directly
+    backgroundColor: '#3498db',
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 8,
@@ -88,6 +101,33 @@ export const globalStyles = StyleSheet.create({
     fontWeight: 'bold',
   },
   flatList: {
-    paddingBottom: 20,
+    paddingBottom: 80,
   },
+  offlineBanner: {
+    backgroundColor: '#ff9800',
+    padding: 12,
+    marginHorizontal: 16,
+    marginBottom: 10,
+    borderRadius: 8,
+  },
+  offlineBannerText: {
+    color: COLORS.white,
+    fontSize: 14,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  infoBar: {
+    backgroundColor: '#e8f5e9',
+    padding: 8,
+    marginHorizontal: 16,
+    marginBottom: 10,
+    borderRadius: 6,
+    borderLeftWidth: 4,
+    borderLeftColor: '#4caf50',
+  },
+  infoText: {
+    color: '#2e7d32',
+    fontSize: 12,
+    textAlign: 'center',
+  }
 });
